@@ -31,7 +31,7 @@ st.title("📈 Netflix Stock Price Prediction Dashboard")
 # ✅ LOAD DATA (ROBUST)
 @st.cache_data
 def load_data():
-    data = pd.read_csv("nflx.csv")
+    data = pd.read_csv("NFLX.csv")
 
     # Clean column names
     data.columns = [col.strip().lower() for col in data.columns]
@@ -142,4 +142,4 @@ if st.checkbox("Show Raw Data"):
 
 # Footer
 st.markdown("---")
-st.markdown("<h4 style='text-align:center; color:gray;'>🚀 Built by Chaithuu</h4>", unsafe_allow_html=True)
+st.markdown("<h4 style='text-align:center; color:gray;'>🚀 Built by Manda Chaitanya</h4>", unsafe_allow_html=True)
